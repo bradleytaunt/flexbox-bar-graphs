@@ -62,6 +62,15 @@ hr {
     width: 100%;
 }
 
+@media(max-width:700px) {
+    body {
+        font: 400 16px/1.5 sans-serif;
+    }
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+}
+
 [data-id="flexbox-bar-graph"] caption {
     font-size: 20px;
     margin: 0 0 1rem 0;
