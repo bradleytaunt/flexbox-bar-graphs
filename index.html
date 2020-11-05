@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Flexbox Bar Graphs</title>
+    <!-- Demo Page Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./flexbox-bar-graph.css">
+</head>
+<body>
+
+    <div class="intro">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5H4zm3 8h2v4H7v-4zm4-6h2v10h-2V7zm4 3h2v7h-2v-7z"/></svg>
+        <h1>Flexbox Bar Graphs</h1>
+        <p>Pure CSS bar graphs with a graceful mobile fallback.</p>
+        <p>Open source and 100% customizable.</p>
+        <p>Focused on minimalism.</p>
+        <br>
+        <nav>
+            <a href="">Why Use This?</a><span> / </span>
+            <a href="">Demos</a><span> / </span>
+            <a href="">Usage &amp; Caveats</a><span> / </span>
+            <a href="https://github.com/bradleytaunt/">View on Github</a>
+        </nav>
+    </div>
+
+    <hr>
+
+    <h2>Why Use This?</h2>
+
+    <p>If you're looking to implement a fairly simple and limited bar graph on a site or web page - this project is for you. More complex data visualization tools are available for those seeking more customization.</p>
+
+    <p><strong>Best Use Cases:</strong></p>
+    <ul>
+        <li>Personal blogs / articles</li>
+        <li>Quick data visualization experiments</li>
+        <li>HTML based presentations, talks etc.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Bar Graph -->
+    <h2>The Demos</h2>
+    <table data-id="flexbox-bar-graph" data-layout="horizontal">
+        <caption>Web Performance Results (in Seconds)</caption>
+        <thead>
+            <tr>
+                <th>Test Performed</th>
+                <th>Before</th>
+                <th>After</th>
+                <th>Difference</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Initial Load Time</th>
+                <td>
+                    <span style="--data-set:4.7/5;"></span>
+                    <p>4.7</p>
+                </td>
+                <td>
+                    <span style="--data-set:2.7/5;"></span>
+                    <p>2.7</p>
+                </td>
+                <td>
+                    <span style="--data-set:2/5;"></span>
+                    <p>2</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Visually Complete</th>
+                <td>
+                    <span style="--data-set:3.8/5;"></span>
+                    <p>3.8</p>
+                </td>
+                <td>
+                    <span style="--data-set:1.9/5;"></span>
+                    <p>1.9</p>
+                </td>
+                <td>
+                    <span style="--data-set:1.9/5;"></span>
+                    <p>1.9</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Fully Loaded</th>
+                <td>
+                    <span style="--data-set:4.9/5;"></span>
+                    <p>4.9</p>
+                </td>
+                <td>
+                    <span style="--data-set:1.6/5;"></span>
+                    <p>1.6</p>
+                </td>
+                <td>
+                    <span style="--data-set:3.3/5;"></span>
+                    <p>3.3</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table data-id="flexbox-bar-graph">
+        <caption>Web Performance Results</caption>
+        <thead>
+            <tr>
+                <th>Test Performed</th>
+                <th>Before</th>
+                <th>After</th>
+                <th>Difference</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Initial Load Time</th>
+                <td>
+                    <span style="--data-set:4.7/5;"></span>
+                    <p>4.7</p>
+                </td>
+                <td>
+                    <span style="--data-set:2.7/5;"></span>
+                    <p>2.7</p>
+                </td>
+                <td>
+                    <span style="--data-set:2/5;"></span>
+                    <p>2</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Visually Complete</th>
+                <td>
+                    <span style="--data-set:3.8/5;"></span>
+                    <p>3.8</p>
+                </td>
+                <td>
+                    <span style="--data-set:1.9/5;"></span>
+                    <p>1.9</p>
+                </td>
+                <td>
+                    <span style="--data-set:1.9/5;"></span>
+                    <p>1.9</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Fully Loaded</th>
+                <td>
+                    <span style="--data-set:4.9/5;"></span>
+                    <p>4.9</p>
+                </td>
+                <td>
+                    <span style="--data-set:1.6/5;"></span>
+                    <p>1.6</p>
+                </td>
+                <td>
+                    <span style="--data-set:3.3/5;"></span>
+                    <p>3.3</p>
+                </td>
+            </tr>
+            <tr>
+                <th>SEO</th>
+                <td>
+                    <span style="--data-set:4.9/5;"></span>
+                    <p>4.9</p>
+                </td>
+                <td>
+                    <span style="--data-set:2.6/5;"></span>
+                    <p>2.6</p>
+                </td>
+                <td>
+                    <span style="--data-set:2.3/5;"></span>
+                    <p>2.3</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END Bar Graph Demos -->
+    <hr>
+
+    <h2>Usage &amp; Caveats</h2>
+    <h4>Basic HTML</h4>
+    <p>Usage is very simple - just set your data together as you normally would in an HTML table. Two items to focus on:</p>
+    <ol>
+        <li>Make sure you set the proper <code>data-id</code> on the table element</li>
+        <li>Each data point is set in the <code>data-set</code> variable. This gives you control over each point (can specify it's total, etc.)</li>
+    </ol>
+<xmp style="background:blanchedalmond;overflow: auto;padding:20px;"><table data-id="flexbox-bar-graph">
+<caption>Web Performance Results</caption>
+<thead>
+    <tr>
+        <th>Test Performed</th>
+        <th>Before</th>
+        <th>After</th>
+        <th>Difference</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th>Initial Load Time</th>
+        <td>
+            <span style="--data-set:4.7/5;"></span>
+            <p>4.7</p>
+        </td>
+        <td>
+            <span style="--data-set:2.7/5;"></span>
+            <p>2.7</p>
+        </td>
+        <td>
+            <span style="--data-set:2/5;"></span>
+            <p>2</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</xmp>
+    <h4>Changing bar graph colors</h4>
+    <p>To change individual bar graph colors, simply edit the corresponding CSS variables found at the top of the CSS file (or replace these variables in your own separate stylesheet)</p>
+    <ul>
+        <li><code>--bar-color-1: #357EC7;</code></li>
+        <li><code>--bar-color-2: #E42217;</code></li>
+        <li><code>--bar-color-3: #4CC417;</code></li>
+        <li><code>--bar-color-4: #7D0541;</code></li>
+        <li><code>--bar-color-5: #FFD801;</code></li>
+    </ul>
+    <h4>Common Standards</h4>
+    <p>There are a set of common standards that should be followed and assumptions made by the project itself that you need to be aware of when creating the <code>table</code> base for your graphs:</p>
+    <ul>
+        <li>The first <code>th</code> in your <code>thead</code> will only be displayed on mobile (this is the main heading for the <code>tbody</code> table headings - so it is for reference only)</li>
+        <li>You have <code>th</code> tags for each of your <code>tbody tr</code> items which label their sibling elements</li>
+    </ul>
+    <p>That's it!</p>
+
+    <h4>Important Caveats</h4>
+    <ol>
+        <li>Individual graph items have a base "limit" of 5 data points. If you wish to include more you will have to add a new instances similar to the others.</li>
+    </ol>
+
+    <hr>
+
+    <footer>
+        <p>An open source project by <a href="https://bradleytaunt.com">Bradley Taunt</a></p>
+    </footer>
+
+</body>
+</html>

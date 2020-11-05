@@ -1,0 +1,85 @@
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/* Flexbox Bar Graphs - Demo Page */
+/* Author: Bradley Taunt */
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+body, html {
+    background: #fffff8;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 1rem;
+}
+body {
+    background: #fffff8;
+    font: 400 20px/1.5 sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    text-align: left;
+}
+code {
+    background: lightgrey;
+    padding: 2px;
+}
+.intro {
+    margin: 5em 0 0;
+    padding: 0 1em;
+    text-align: center;
+}
+.intro svg {
+    width: 120px;
+}
+.intro p {
+    font-size: 120%;
+    margin: 0 0 0.5em 0;
+}
+h1, h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+footer {
+    padding: 0 0 2em;
+    text-align: center;
+}
+caption {
+    font-style: italic;
+}
+hr {
+    background: lightgrey;
+    border: 0;
+    height: 2px;
+    margin: 5rem auto;
+    width: 100%;
+}
+
+[data-id="flexbox-bar-graph"] caption {
+    font-size: 20px;
+    margin: 0 0 1rem 0;
+}
+[data-id="flexbox-bar-graph"] tr {
+    border-bottom: 1px solid grey;
+}
+[data-id="flexbox-bar-graph"] td,
+[data-id="flexbox-bar-graph"] th {
+    padding: 5px 10px;
+}
+
+@media(min-width: 1000px) {
+    [data-id="flexbox-bar-graph"] tr {
+        border-bottom: 0;
+    }
+    [data-id="flexbox-bar-graph"] td,
+    [data-id="flexbox-bar-graph"] th {
+        padding: 0;
+    }
+}
