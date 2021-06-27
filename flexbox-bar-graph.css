@@ -87,21 +87,6 @@
     [data-id="flexbox-bar-graph"] thead tr th:nth-child(1):before {
         display: none;
     }
-    [data-id="flexbox-bar-graph"] thead tr th:nth-child(2):before {
-        background: var(--bar-color-1);
-    }
-    [data-id="flexbox-bar-graph"] thead tr th:nth-child(3):before {
-        background: var(--bar-color-2);
-    }
-    [data-id="flexbox-bar-graph"] thead tr th:nth-child(4):before {
-        background: var(--bar-color-3);
-    }
-    [data-id="flexbox-bar-graph"] thead tr th:nth-child(5):before {
-        background: var(--bar-color-4);
-    }
-    [data-id="flexbox-bar-graph"] thead tr th:nth-child(6):before {
-        background: var(--bar-color-5);
-    }
 
     [data-id="flexbox-bar-graph"] tbody {
         display: flex;
@@ -139,19 +124,25 @@
         height: calc(var(--data-set) * 100%);
         width: 20px;
     }
-    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(1) span {
+
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(1) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(2):before {
         background: var(--bar-color-1);
     }
-    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(2) span {
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(2) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(3):before {
         background: var(--bar-color-2);
     }
-    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(3) span {
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(3) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(4):before {
         background: var(--bar-color-3);
     }
-    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(4) span {
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(4) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(5):before {
         background: var(--bar-color-4);
     }
-    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(5) span {
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(5) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(6):before {
         background: var(--bar-color-5);
     }
 
